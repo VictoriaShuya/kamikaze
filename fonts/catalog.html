@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
@@ -51,6 +51,7 @@
 
   </nav>
 </header>
+
 <main-inner>
 <header class="inner-header">
 <h1 class="inner-header-title">Моноподы для селфи</h1>
@@ -64,12 +65,143 @@
     <li class="breadcrumbs-item">
       <a class="breadcrumbs-link">Моноподы для селфи</a>
     </li>
-  </ul>
-  <h2 class="visually-hidden">товары</h2>
-
-
 </header>
+
+  <section class="catalog-products">
+  <h2 class="">фильтр:</h2>
+  <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+    <fieldset class="catalog-filter-group">
+      <legend class="catalog-filter-title">Стоимость</legend>
+    </fieldset>
+    <fieldset class="catalog-filter-group">
+      <legend class="catalog-filter-title">Цвет</legend>
+      <ul class="catalog-filter-list">
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="black" checked>
+            Черный
+          </label>
+        </li>
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="checkbox" name="white" checked>
+            Белый
+          </label>
+        </li>
+        <li class="catalog-filter-item">
+      <label class="control">
+        <input class="control-input" type="checkbox" name="blue">
+        Синий
+      </label>
+        </li>
+        <li class="catalog-filter-item">
+      <label class="control">
+        <input class="control-input" type="checkbox" name="pink">
+        Красный
+      </label>
+        </li>
+        <li class="catalog-filter-item">
+      <label class="control">
+        <input class="control-input" type="checkbox" name="black">
+        Розовый
+      </label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="catalog-filter-group">
+      <legend class="catalog-filter-title">Bluetooth</legend>
+      <ul class="catalog-filter-list">
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="radio" name="product-group" checked>
+            Есть
+          </label>
+        </li>
+        <li class="catalog-filter-item">
+          <label class="control">
+            <input class="control-input" type="radio" name="product-group">
+            Нет
+          </label>
+        </li>
+    </fieldset>
+    <button class="button" type="submit">Показать</button>
+  </form>
+
+    <h2>Сортировка:</h2>
+    <select class="select-control" aria-label="Сортировка">
+      <option value="popular">Популярные</option>
+    </select>
+   <div>
+     <button type="button">
+      <span class="visually-hidden">Переключатель вверх</span>
+    </button>
+    <button type="button">
+      <span class="visually-hidden">Переключатель вниз</span>
+    </button>
+   </div>
+    <ul class="product-list">
+    <li class="product-card">
+    <a class="product-card-link" href="product.html">
+      <img class="product-class-image" src="" alt="">
+      <h3 class="product-card-link">Любительская
+             селфи-палка</h3>
+    </a>
+    <b class="product-card-price">500 ₽</b>
+    </li>
+    <li class="product-card">
+    <a class="product-card-link" href="product.html">
+      <img class="product-class-image" src="" alt="">
+      <h3 class="product-card-link">Профессиональная селфи-палка</h3>
+    </a>
+    <b class="product-card-price">1 500 ₽</b>
+    </li>
+    <li class="product-card">
+    <a class="product-card-link" href="product.html">
+      <img class="product-class-image" src="" alt="">
+      <h3 class="product-card-link">Непотопляемая
+        селфи-палка</h3>
+    </a>
+    <b class="product-card-price">2 500 ₽</b>
+    </li>
+    <li class="product-card">
+    <a class="product-card-link" href="product.html">
+      <img class="product-class-image" src="" alt="">
+      <h3 class="product-card-link">Селфи-палка «Следуй за мной»</h3>
+    </a>
+    <b class="product-card-price">1 500 ₽</b>
+      </li>
+    </ul>
+  <button class="button-panagination-show-more" type="button">Загрузить ещё</button>
+  <ul class="pagination">
+    <li class="pagination-item">
+      <a class="pagination-link pagination-prev pagination-disabled" href="#">
+        <span class="">Назад</span>
+      </a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link pagination-current">1</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link pagination-current">1</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link pagination-current">3</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link pagination-current">...</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link pagination-current">15</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link pagination-next" href="#">
+        <span class="">Вперёд</span>
+      </a>
+    </li>
+  </ul>
+  </section>
 </main-inner>
+
 <footer>
   <a class="navigation-link">
     <img class="logo" src="" alt="Логотип магазина электроники &#8249;Kamikaze&#8250;">
