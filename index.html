@@ -1,12 +1,212 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Магазин электроники &#8249;Kamikaze&#8250;</title>
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<body>
+<header class="page-header">
+  <nav class="navigation">
+    <a class="navigation-link">
+      <img class="logo" src="" alt="Логотип магазина электроники &#8249;Kamikaze&#8250;">
+    </a>
+    <label for="site-search" alt="Поиск по сайту"></label>
+    <input type="search" id="site-search" name="q" placeholder="Текст поиска">
+    <button>Найти</button>
+    <ul>
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">Войти</a>
+    </li>
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">Сравнить</a>
+    </li>
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">Корзина</a>
+    </li>
+    </ul>
 
-  </body>
+    <ul>
+      <li class="navigation-item">
+        <button type="button">
+          <span>Каталог товаров</span>
+        </button>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Доставка</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Гарантия</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Контакты</a>
+      </li>
+    </ul>
+
+  </nav>
+</header>
+
+<main class="main-index">
+  <h1 class="visually-hidden">Магазин электроники &#8249;Kamikaze&#8250;</h1>
+  <img class="logo" src="" alt="Логотип магазина электроники &#8249;Kamikaze&#8250;">
+  <section class="best-products">
+    <h2 class="visually-hidden">Лучшие продукты</h2>
+    <ul class="best-products-list">
+      <li class="best-products-item">
+        <div>
+          <img class="slider-1" src="" alt="Изображение лазерного квадракоптера">
+          <button type="button">
+            <span class="visually-hidden">Переключатель изображений продукта назад</span>
+          </button>
+          <button type="button">
+            <span class="visually-hidden">Переключатель изображений продукта вперед</span>
+          </button>
+        </div>
+        <span class="best-products-title">Порхает как бабочка, жалит как пчела!</span>
+        <p class="best-products-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <a class="best-products-link" href="#">Подробнее</a>
+        <button type="button">Описание продукта 1</button>
+        <button type="button">Описание продукта 2</button>
+        <button type="button">Описание продукта 3</button>
+        <table class="best-products-parameters">
+          <tbody>
+          <tr>
+            <td>800 м</td>
+            <td>50 м</td>
+          </tr>
+          </tbody>
+          <thead>
+          <tr>
+            <td>Дальность полета</td>
+            <td>Радиус поражения</td>
+          </tr>
+          </thead>
+        </table>
+      </li>
+    </ul>
+  </section>
+  <section class="classification">
+    <h2 class="visually-hidden">Классификация товаров</h2>
+    <ul class="classification-list">
+      <li class="classification-items">
+        <a class="classification-list" href="#">Виртуальная реальность</a>
+        <img src="" alt="Иконка товара">
+      </li>
+      <li class="classification-items">
+        <a class="classification-list" href="#">Моноподы для селфи</a>
+        <img src="" alt="Иконка товара">
+      </li>
+      <li class="classification-items">
+        <a class="classification-list" href="#">Экшн-камеры</a>
+        <img src="" alt="Иконка товара">
+      </li>
+      <li class="classification-items">
+        <a class="classification-list" href="#">Фитнес-браслеты</a>
+        <img src="" alt="Иконка товара">
+      </li>
+      <li class="classification-items">
+        <a class="classification-list" href="#">Умные часы</a>
+        <img src="" alt="Иконка товара">
+      </li>
+      <li class="classification-items">
+        <a class="classification-list" href="#">Квадрокоптеры</a>
+        <img src="" alt="Иконка товара">
+      </li>
+    </ul>
+  </section>
+  <section>
+    <ul class="features-list">
+      <li class="features-item">
+        <a class="features-link" href="#">Доставка</a>
+      </li>
+      <li class="features-item">
+        <a class="features-link" href="#">Гарантия</a>
+      </li>
+      <li class="features-item">
+        <a class="features-link" href="#">Кредит</a>
+      </li>
+    </ul>
+    <h2 class="features">Доставка</h2>
+    <p class="features-description">Мы с удовольствием доставим ваш товар прямо
+      к вашему подъезду совершенно бесплатно! Ведь
+      мы неплохо заработаем, поднимая его на ваш этаж.</p>
+    <span>Доставим редкий товар под заказ</span>
+    <button type="button">Информация</button>
+  </section>
+  <section>
+    <h2>О нас</h2>
+    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+    <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+    <ul class="campaign">
+      <li>Меловые линии</li>
+      <li>СДИК</li>
+      <li>ТоксБерри</li>
+    </ul>
+    <a class="campaign-link" href="#">Подробнее о нас</a>
+  </section>
+  <section>
+    <h2 class="contacts">Контакты</h2>
+    <p>Вы можете забрать товар сами, заехав в наш офис.
+      Заодно сможете проверить работоспособность покупки.</p>
+    <span>Интернет-магазин «Kamikaze»</span>
+    <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+    <a class="number" href="#">+7 (812) 812-12-12</a>
+    <div>
+      <span>Время работы</span>
+      <ul class="time">
+        <li>пн—пт: с 10:00 до 22:00</li>
+        <li>сб—вс: с 10:00 до 19:00</li>
+      </ul>
+    </div>
+    <a class="contacts-link" href="#">Напишите нам</a>
+  </section>
+  <section>
+    <h2 class="mailing">Подпишитесь
+      на рассылку</h2>
+    <p>Еженедельный дайджест с обзорами новинок,
+      длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <input name="e-mail" type="text" placeholder="Ваш e-mail">
+      <button>Подписаться</button>
+    </form>
+    <span>Это бесплатно</span>
+  </section>
+</main>
+<footer>
+  <a class="navigation-link">
+    <img class="logo" src="" alt="Логотип магазина электроники &#8249;Kamikaze&#8250;">
+  </a>
+  <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+  <ul class="information-list">
+    <li class="information-item">
+      <a class="information-link" href="#">Доставка</a>
+    </li>
+    <li class="information-item">
+      <a class="information-link" href="#">Гарантия</a>
+    </li>
+    <li class="information-item">
+      <a class="information-link" href="#">Контакты</a>
+    </li>
+  </ul>
+  <a class="number" href="#">+7 (812) 812-12-12</a>
+  <ul class="network-list">
+    <li class="network-items">
+      <a class="network-list" href="#"></a>
+      <img src="" alt="Иконка соцсети">
+    </li>
+    <li class="network-items">
+      <a class="network-list" href="#"></a>
+      <img src="" alt="Иконка соцсети">
+    </li>
+    <li class="network-items">
+      <a class="network-list" href="#"></a>
+      <img src="" alt="Иконка соцсети">
+    </li>
+  </ul>
+  <a class="htmlacademy-link">
+    <img class="logo" src="" alt="Логотип HTMLAcademy">
+  </a>
+</footer>
+
+</body>
 </html>
